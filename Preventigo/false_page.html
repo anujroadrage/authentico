@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/product-detail.js"></script>
+    <link href="css/product-detail.css" rel="stylesheet">
+    <link href="css/preventigo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	
+</head>
+<html>
+
+    <body>
+        <header class="container-fluid" id="home">
+            <div class="wrapper row"><center>
+                 <h2>Welcome To Our Company</h2>
+                </center>
+            </div>
+        </header>
+        <section class="container-fluid navigation-header">
+            <div class="row wrapper">
+                <p class="logo col-lg-6 col-xs-6">
+                    <img src="IMAGES/logos.png">
+                </p>
+            </div>
+        </section>
+        <div class="container all-data">
+            <div class="row">
+                <div class="container">
+                     <h2>Please enter some details to verify the product</h2><br>
+					 
+					<form action="php/rdr.php" method="post"  enctype="multipart/form-data" class="form-horizontal col-xs-12">
+						<div class="form-group entry">
+							<input type="hidden" name="tag" value="manual_input">
+							<div style="display:none" id="wrong-search-alert" class="alert alert-danger col-sm-12"></div>
+							<div>
+							<input type="text" name="enter-code" class="form-control" id="name" placeholder="Name of the product">
+							<br>
+							<input type="text" name="enter-code" class="form-control" id="company" placeholder="Name of the Company">
+							<br>
+							<input type="text" name="enter-code" class="form-control" id="shop" placeholder="Name of the Shop">
+							<br><br>
+							<label>Enter Address of shop</label>
+							<br>
+							<input type="text" name="enter-code" class="form-control" id="street" placeholder="street address">
+							<br>
+							<input type="text" name="enter-code" class="form-control" id="city" placeholder="city">
+							<br>
+							<input type="text" name="enter-code" class="form-control" id="state" placeholder="state">
+							<br>
+							<input type="text" name="enter-code" class="form-control" id="pincode" placeholder="pincode">
+							<br>
+							</div>
+							
+							 <div class="boxes">
+							 <span>
+								<label>Choose multiple images of product to upload</label> 
+								<input type="file" name="fileToUpload[]" id="fileToUpload" value="upload Image" multiple class="inputfile inputfile-4 hideme"/>
+								</span>
+							</div>
+						</div>
+						<button type="submit" id="serial_num_submit" name="submit" value="submit" class="btn btn-success submitbtn">Submit</button>
+					</form>
+                    
+                </div>
+               
+            </div>
+
+    </div>
+	<br><br>
+
+    <section>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <div class="col-md-12 social-icons">
+
+            <ul class="social-network social-circle">
+
+                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+
+                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+
+                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+
+            </ul>
+
+            <p>copyright&copy Preventigo 2017. All rights reserved.</p>
+
+        </div>
+					
+	</section>
+
+</body>
+
+
+
+</html>
